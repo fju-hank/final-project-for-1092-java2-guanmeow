@@ -28,7 +28,7 @@ public class Tester {
         }else{
             System.out.println("總金額為" + total);
         }
-        System.out.println("Please insert the money(1,5,10,50,100)");
+        System.out.println("請投入紙鈔或硬幣1(1,5,10,50,100)");
         Money money = new Money();
         money.money();
     }
