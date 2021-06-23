@@ -7,7 +7,7 @@ public class Money<s> {
     int c = -1;
 
     public void money() {
-        System.out.println("請投入紙鈔或硬幣1(1,5,10,50,100)");
+        System.out.println("請投入紙鈔或硬幣(1,5,10,50,100)");
         while (c != 0) {
             Scanner scan = new Scanner(System.in);
             c = scan.nextInt();
