@@ -32,6 +32,18 @@ public class Tester {
         Money money = new Money();
         money.money();
         int sum = money.coin-total;
-        System.out.println("找您 " + sum );
+        System.out.println("找您一共 " + sum +"元");
+       int hundred = sum/100;
+       int h = sum%100;
+       int fiveTen =h/50;
+       int ft =h%50;
+       int ten = ft/10;
+       int t = ft%10;
+       int five =t/5;
+       int f = t%5;
+       int one = f/1;
+        System.out.println("確認是否收到 " +hundred +"張100元"+fiveTen +"枚50元"
+                        +ten+"枚10元" + five+"枚5元"+ one +"枚1元");
+        System.out.println("這是您的票，謝謝購買");
     }
 }
