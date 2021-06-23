@@ -19,7 +19,7 @@ public class Ticket {
     }
     public void rule(){
         try {
-            URL url = new URL("http://www.moc.gov.tw/information_310_20382.html");
+            URL url = new URL("https://odws.hccg.gov.tw/001/Upload/25/OpenData/9059/392/f3a3b874-cbce-427c-9223-c667fe0b6ff6.json");
             HttpURLConnection connection = (HttpURLConnection)url.openConnection();
             InputStream is = connection.getInputStream();
             BufferedReader br = new BufferedReader(new InputStreamReader(is));
