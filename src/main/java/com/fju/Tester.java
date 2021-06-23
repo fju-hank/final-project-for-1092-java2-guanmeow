@@ -7,7 +7,7 @@ public class Tester {
         Scanner sc = new Scanner(System.in);
         Adult adult = new Adult();
         Kid kid = new Kid();
-        Elder elder =new Elder();
+        Elder elder = new Elder();
 
         System.out.println("購票規則:");
         System.out.println("身高150cm以下算小孩");
@@ -19,31 +19,32 @@ public class Tester {
         int k = sc.nextInt();
         System.out.println("請問您要幾張敬老票?");
         int e = sc.nextInt();
-        int total = a*adult.cost+k*kid.cost+e*elder.cost;
-        float all =0;
-        if(a+k+e>=10){
-            all =((float) total*0.9f+1);
-            total=(int)all;
+        int total = a * adult.cost + k * kid.cost + e * elder.cost;
+        float all = 0;
+        if (a + k + e >= 10) {
+            all = ((float) total * 0.9f + 1);
+            total = (int) all;
             System.out.println("總金額為" + total);
-        }else{
+        } else {
             System.out.println("總金額為" + total);
         }
-        System.out.println("請投入紙鈔或硬幣1(1,5,10,50,100)");
+
         Money money = new Money();
         money.money();
-        int sum = money.coin-total;
-        System.out.println("找您一共 " + sum +"元");
-       int hundred = sum/100;
-       int h = sum%100;
-       int fiveTen =h/50;
-       int ft =h%50;
-       int ten = ft/10;
-       int t = ft%10;
-       int five =t/5;
-       int f = t%5;
-       int one = f/1;
-        System.out.println("確認是否收到 " +hundred +"張100元"+fiveTen +"枚50元"
-                        +ten+"枚10元" + five+"枚5元"+ one +"枚1元");
-        System.out.println("這是您的票，謝謝購買");
-    }
+        int sum = money.coin - total;
+
+            System.out.println("找您一共 " + sum + "元");
+            int hundred = sum / 100;
+            int h = sum % 100;
+            int fiveTen = h / 50;
+            int ft = h % 50;
+            int ten = ft / 10;
+            int t = ft % 10;
+            int five = t / 5;
+            int f = t % 5;
+            int one = f / 1;
+            System.out.println(hundred + "張100元, " + fiveTen + "枚50元, "
+                    + ten + "枚10元, " + five + "枚5元, " + one + "枚1元");
+            System.out.println("謝謝購買");
+        }
 }
