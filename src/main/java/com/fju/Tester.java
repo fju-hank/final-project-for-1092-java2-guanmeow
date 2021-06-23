@@ -31,5 +31,7 @@ public class Tester {
         System.out.println("請投入紙鈔或硬幣1(1,5,10,50,100)");
         Money money = new Money();
         money.money();
+        int sum = money.coin-total;
+        System.out.println("找您 " + sum );
     }
 }
