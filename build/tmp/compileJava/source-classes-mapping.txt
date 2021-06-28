@@ -1,12 +1,12 @@
-com/fju/Money.java
- com.fju.Money
+com/fju/Adult.java
+ com.fju.Adult
 com/fju/Kid.java
  com.fju.Kid
 com/fju/Ticket.java
  com.fju.Ticket
 com/fju/Elder.java
  com.fju.Elder
-com/fju/Adult.java
- com.fju.Adult
+com/fju/Money.java
+ com.fju.Money
 com/fju/Tester.java
  com.fju.Tester
