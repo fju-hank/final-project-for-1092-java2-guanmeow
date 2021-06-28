@@ -22,7 +22,7 @@ public class Tester {
             System.out.println("購票規則:");
             System.out.println("身高150cm以下算小孩");
             System.out.println("老人票必須超過65歲");
-            System.out.println("團體打九折活動須單次購買加總超過10張(不限票型)");
+            System.out.println("團體進場有打九折的活動:須單次購買超過10張(不限票型)");
             System.out.println("請問您要幾張大人票(" + adult.cost + "元/張)?");
             int a = sc.nextInt();
             System.out.println("請問您要幾張孩童票(" + kid.cost + "元/張)");
